@@ -12,7 +12,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.flipkart.framework.selenium.BaseWebDriverTest;
+import com.flipkart.framework.selenium.BaseWebDriver;
 import com.flipkart.framework.selenium.WebDriverAction;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;

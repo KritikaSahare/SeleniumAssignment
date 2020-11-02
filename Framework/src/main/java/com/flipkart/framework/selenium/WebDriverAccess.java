@@ -8,11 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.flipkart.framework.selenium.BaseWebDriverTest;
+import com.flipkart.framework.selenium.BaseWebDriver;
 
 
 
-public class WebDriverAccess extends BaseWebDriverTest {
+public class WebDriverAccess extends BaseWebDriver {
 	public static WebDriver getDriver() {
 		return driver;
 	}

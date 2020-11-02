@@ -2,25 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Health Check of Store for buying all packages together]">
   <parameter name="implicitWait" value="10"/>
-  <parameter name="pincode" value="122002"/>
+  <parameter name="mobileBrand" value="Mi"/>
   <parameter name="fileName" value="OrderId.xlsx"/>
+  <parameter name="thinkTime" value="15"/>
   <parameter name="sheetName" value="Sheet1"/>
-  <parameter name="address2" value="Sector 39"/>
-  <parameter name="mobileNumber" value="9340217739"/>
-  <parameter name="address1" value="Adda247.com - 1005, Tower C, Unitech Cyber Hub"/>
+  <parameter name="browser" value="chrome"/>
   <parameter name="libraryPath" value=""/>
   <parameter name="filePath" value="C:\\TestData"/>
-  <parameter name="fullName" value="Automation User"/>
-  <parameter name="emailID" value="@dispostable.com.com"/>
   <parameter name="env" value="prod"/>
-  <parameter name="url" value="https://www.flipkart.com/"/>
-  <parameter name="mobileBrand" value="Mi"/>
-  <parameter name="password" value="12345678"/>
-  <parameter name="thinkTime" value="15"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="landmark" value="Unitech Cyber Park"/>
   <parameter name="waitTime" value="5"/>
-  <parameter name="couponCode" value="99w2NsF"/>
+  <parameter name="url" value="https://www.flipkart.com/"/>
   <listeners>
     <listener class-name="com.flipkart.framework.listeners.TestListener"/>
   </listeners>
@@ -29,10 +20,11 @@
       <class name="com.flipkart.testing.tests.FlipkartScenario1Test">
         <methods>
           <include name="clickLoginModalCrossButtonTest"/>
+          <include name="verifySortLowToHighOfNProducts"/>
           <include name="waitForPageToBeLoadedTest"/>
           <include name="clickMobilePhoneBrandTest"/>
           <include name="loadObjectMaps"/>
-          <include name="clickSortBy"/>
+          <include name="clickSortByLowToHighTest"/>
           <include name="hoverOnElectronicsLinkTest"/>
         </methods>
       </class> <!-- com.flipkart.testing.tests.FlipkartScenario1Test -->
