@@ -19,7 +19,7 @@
 	<test name = "Store Health Check">
 
 			<classes>
-			<class name="com.flipkart.framework.selenium.BaseWebDriverTest"/>
+			<class name="com.flipkart.framework.selenium.BaseWebDriver"/>
 			
 			<class name="com.flipkart.testing.tests.FlipkartScenario1Test"/> 
 			</classes>			

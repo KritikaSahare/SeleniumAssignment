@@ -18,7 +18,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.flipkart.framework.selenium.BaseWebDriverTest;
+import com.flipkart.framework.selenium.BaseWebDriver;
 import com.flipkart.framework.selenium.WebDriverAccess;
 import com.flipkart.framework.selenium.WebDriverAction;
 import com.flipkart.framework.selenium.WebDriverWaits;
@@ -106,7 +106,7 @@ public class WebDriverAction extends WebDriverAccess {
 		else if(send.equals(ACTION_STYLE_KEYS)) {
 			el.sendKeys(value);
 		} else if(send.equals(ACTION_STYLE_JAVASCRIPT))  {
-			JavascriptExecutor execute = (JavascriptExecutor) BaseWebDriverTest.driver;
+			JavascriptExecutor execute = (JavascriptExecutor) BaseWebDriver.driver;
 			execute.executeScript("document.getElementById('"+el+"').value = '"+value+"';");
 		}
 	}

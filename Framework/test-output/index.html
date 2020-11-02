@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -24,7 +23,6 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
@@ -51,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Health_Check_of_Store_for_buying_all_packages_together">
-                    <span>C:\HealthKart\Framework\TestSuites\flipkart_test.xml</span>
+                    <span>C:\HealthkartAssignment\SeleniumAssignment\Framework\TestSuites\flipkart_test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,12 +112,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Health_Check_of_Store_for_buying_all_packages_together" title="com.flipkart.testing.tests.FlipkartScenario1Test" hash-for-method="clickSortByLowToHigh">clickSortByLowToHigh</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Health_Check_of_Store_for_buying_all_packages_together" title="com.flipkart.testing.tests.FlipkartScenario1Test" hash-for-method="clickSortByLowToHighTest">clickSortByLowToHighTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Health_Check_of_Store_for_buying_all_packages_together" title="com.flipkart.testing.tests.FlipkartScenario1Test" hash-for-method="hoverOnElectronicsLinkTest">hoverOnElectronicsLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Health_Check_of_Store_for_buying_all_packages_together" title="com.flipkart.testing.tests.FlipkartScenario1Test" hash-for-method="verifySortLowToHighOfNProducts">verifySortLowToHighOfNProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -162,9 +165,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="clickSortByLowToHigh">
-                  </a> <!-- clickSortByLowToHigh -->
-                  <span class="method-name">clickSortByLowToHigh</span>
+                  <a name="clickSortByLowToHighTest">
+                  </a> <!-- clickSortByLowToHighTest -->
+                  <span class="method-name">clickSortByLowToHighTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -172,6 +175,13 @@
                   <a name="hoverOnElectronicsLinkTest">
                   </a> <!-- hoverOnElectronicsLinkTest -->
                   <span class="method-name">hoverOnElectronicsLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySortLowToHighOfNProducts">
+                  </a> <!-- verifySortLowToHighOfNProducts -->
+                  <span class="method-name">verifySortLowToHighOfNProducts</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -186,7 +196,7 @@
         </div> <!-- panel Health_Check_of_Store_for_buying_all_packages_together -->
         <div panel-name="test-xml-Health_Check_of_Store_for_buying_all_packages_together" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\HealthKart\Framework\TestSuites\flipkart_test.xml</span>
+            <span class="header-content">C:\HealthkartAssignment\SeleniumAssignment\Framework\TestSuites\flipkart_test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -250,32 +260,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'waitForPageToBeLoadedTest')
+data.setCell(0, 1, 'clickSortByLowToHighTest')
 data.setCell(0, 2, 'com.flipkart.testing.tests.FlipkartScenario1Test')
-data.setCell(0, 3, 7561);
+data.setCell(0, 3, 7628);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'hoverOnElectronicsLinkTest')
+data.setCell(1, 1, 'waitForPageToBeLoadedTest')
 data.setCell(1, 2, 'com.flipkart.testing.tests.FlipkartScenario1Test')
-data.setCell(1, 3, 3155);
+data.setCell(1, 3, 5062);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickMobilePhoneBrandTest')
+data.setCell(2, 1, 'hoverOnElectronicsLinkTest')
 data.setCell(2, 2, 'com.flipkart.testing.tests.FlipkartScenario1Test')
-data.setCell(2, 3, 700);
+data.setCell(2, 3, 3147);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'clickLoginModalCrossButtonTest')
 data.setCell(3, 2, 'com.flipkart.testing.tests.FlipkartScenario1Test')
-data.setCell(3, 3, 335);
+data.setCell(3, 3, 329);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'clickSortByLowToHigh')
+data.setCell(4, 1, 'verifySortLowToHighOfNProducts')
 data.setCell(4, 2, 'com.flipkart.testing.tests.FlipkartScenario1Test')
-data.setCell(4, 3, 230);
+data.setCell(4, 3, 214);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clickMobilePhoneBrandTest')
+data.setCell(5, 2, 'com.flipkart.testing.tests.FlipkartScenario1Test')
+data.setCell(5, 3, 112);
 window.suiteTableData['Health_Check_of_Store_for_buying_all_packages_together']= { tableData: data, tableDiv: 'times-div-Health_Check_of_Store_for_buying_all_packages_together'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Health_Check_of_Store_for_buying_all_packages_together">
               </div> <!-- times-div-Health_Check_of_Store_for_buying_all_packages_together -->
             </div> <!-- times-div -->
@@ -311,39 +325,42 @@ return data;
               <div class="chronological-class-name">com.flipkart.testing.tests.FlipkartScenario1Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">loadObjectMaps</span>
-                <span class="method-start">23108 ms</span>
+                <span class="method-start">20776 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">clickLoginModalCrossButtonTest</span>
-                <span class="method-start">23140 ms</span>
+                <span class="method-start">20827 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">hoverOnElectronicsLinkTest</span>
-                <span class="method-start">23492 ms</span>
+                <span class="method-start">21172 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickMobilePhoneBrandTest(Mi)</span>
-                <span class="method-start">26655 ms</span>
+                <span class="method-start">24327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">waitForPageToBeLoadedTest</span>
-                <span class="method-start">27360 ms</span>
+                <span class="method-start">24443 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">clickSortByLowToHigh</span>
-                <span class="method-start">34924 ms</span>
+                <span class="method-name">clickSortByLowToHighTest</span>
+                <span class="method-start">29508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySortLowToHighOfNProducts</span>
+                <span class="method-start">37142 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.flipkart.framework.selenium.BaseWebDriver</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeBrowserAfterSuite</span>
-                <span class="method-start">35892 ms</span>
+                <span class="method-start">37841 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

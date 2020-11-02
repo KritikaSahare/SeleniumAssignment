@@ -56,7 +56,7 @@ public class FlipkartScenario1Test {
 	
 	@Test(dependsOnMethods = "waitForPageToBeLoadedTest", priority = 1)
 	@Documentation(step="Click Sort By Low to High Tab",expected ="Able to click")
-	public static void clickSortByLowToHigh() throws Exception
+	public static void clickSortByLowToHighTest() throws Exception
 	{
 		MobileListingPage.clickSortByLowToHigh();
 		BrowserWait.waitForPageToBeLoaded();
