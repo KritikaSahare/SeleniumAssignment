@@ -18,7 +18,7 @@ import com.flipkart.framework.objects.helpers.LoadObjectMaps;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseWebDriver {
+public class BaseWebDriverTest {
 
 	public static WebDriver driver;
 	public static String browser;
@@ -30,10 +30,10 @@ public class BaseWebDriver {
 	@Parameters ({"browser", "waitTime", "thinkTime", "implicitWait","url"})
 	public void startBrowserBeforeSuite(String browser, int waitTime, int thinkTime, int implicitWait,String url) throws Exception
 	  {
-			BaseWebDriver.browser = browser;
-			BaseWebDriver.waitTime = waitTime;
-			BaseWebDriver.thinkTime = thinkTime;
-			BaseWebDriver.implicitWaitTime = implicitWait;
+			BaseWebDriverTest.browser = browser;
+			BaseWebDriverTest.waitTime = waitTime;
+			BaseWebDriverTest.thinkTime = thinkTime;
+			BaseWebDriverTest.implicitWaitTime = implicitWait;
 			
 			if(browser.equalsIgnoreCase("chrome"))	
 			{
