@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Health Check of Store for buying all packages together" duration-ms="12064" started-at="2020-11-02T13:00:00 IST" finished-at="2020-11-02T13:00:12 IST">
+    <groups>
+    </groups>
+    <test name="Store Health Check" duration-ms="12064" started-at="2020-11-02T13:00:00 IST" finished-at="2020-11-02T13:00:12 IST">
+      <class name="com.flipkart.framework.selenium.BaseWebDriver">
+        <test-method status="PASS" signature="startBrowserBeforeSuite(java.lang.String, int, int, int, java.lang.String)[pri:0, instance:com.flipkart.framework.selenium.BaseWebDriver@8e24743]" name="startBrowserBeforeSuite" is-config="true" duration-ms="23092" started-at="2020-11-02T12:59:37 IST" finished-at="2020-11-02T13:00:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://www.flipkart.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowserBeforeSuite -->
+        <test-method status="PASS" signature="closeBrowserAfterSuite()[pri:0, instance:com.flipkart.framework.selenium.BaseWebDriver@8e24743]" name="closeBrowserAfterSuite" is-config="true" duration-ms="301" started-at="2020-11-02T13:00:12 IST" finished-at="2020-11-02T13:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAfterSuite -->
+      </class> <!-- com.flipkart.framework.selenium.BaseWebDriver -->
+      <class name="com.flipkart.testing.tests.FlipkartScenario1Test">
+        <test-method status="PASS" signature="loadObjectMaps()[pri:0, instance:com.flipkart.testing.tests.FlipkartScenario1Test@74a10858]" name="loadObjectMaps" is-config="true" duration-ms="24" started-at="2020-11-02T13:00:00 IST" finished-at="2020-11-02T13:00:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadObjectMaps -->
+        <test-method status="PASS" signature="clickLoginModalCrossButtonTest()[pri:0, instance:com.flipkart.testing.tests.FlipkartScenario1Test@74a10858]" name="clickLoginModalCrossButtonTest" duration-ms="335" started-at="2020-11-02T13:00:00 IST" finished-at="2020-11-02T13:00:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoginModalCrossButtonTest -->
+        <test-method status="PASS" signature="hoverOnElectronicsLinkTest()[pri:1, instance:com.flipkart.testing.tests.FlipkartScenario1Test@74a10858]" name="hoverOnElectronicsLinkTest" duration-ms="3155" started-at="2020-11-02T13:00:00 IST" depends-on-methods="com.flipkart.testing.tests.FlipkartScenario1Test.clickLoginModalCrossButtonTest" finished-at="2020-11-02T13:00:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnElectronicsLinkTest -->
+        <test-method status="PASS" signature="clickMobilePhoneBrandTest(java.lang.String)[pri:1, instance:com.flipkart.testing.tests.FlipkartScenario1Test@74a10858]" name="clickMobilePhoneBrandTest" duration-ms="700" started-at="2020-11-02T13:00:03 IST" depends-on-methods="com.flipkart.testing.tests.FlipkartScenario1Test.hoverOnElectronicsLinkTest" finished-at="2020-11-02T13:00:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickMobilePhoneBrandTest -->
+        <test-method status="PASS" signature="waitForPageToBeLoadedTest()[pri:1, instance:com.flipkart.testing.tests.FlipkartScenario1Test@74a10858]" name="waitForPageToBeLoadedTest" duration-ms="7561" started-at="2020-11-02T13:00:04 IST" depends-on-methods="com.flipkart.testing.tests.FlipkartScenario1Test.clickMobilePhoneBrandTest" finished-at="2020-11-02T13:00:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitForPageToBeLoadedTest -->
+        <test-method status="PASS" signature="clickSortByLowToHigh()[pri:1, instance:com.flipkart.testing.tests.FlipkartScenario1Test@74a10858]" name="clickSortByLowToHigh" duration-ms="230" started-at="2020-11-02T13:00:11 IST" depends-on-methods="com.flipkart.testing.tests.FlipkartScenario1Test.waitForPageToBeLoadedTest" finished-at="2020-11-02T13:00:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSortByLowToHigh -->
+      </class> <!-- com.flipkart.testing.tests.FlipkartScenario1Test -->
+    </test> <!-- Store Health Check -->
+  </suite> <!-- Health Check of Store for buying all packages together -->
+</testng-results>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Health Check of Store for buying all packages together" verbose="1" preserve-order="true" >
+	<listeners>
+		<listener
+			class-name="com.flipkart.framework.listeners.TestListener" />
+	</listeners>
+	<parameter name="browser" value="chrome" />
+	<parameter name="waitTime" value="5" />
+	<parameter name="thinkTime" value="15" />
+	<parameter name="implicitWait" value="10" />
+	<parameter name="libraryPath" value="" />
+	<parameter name="env" value="prod" />
+	<parameter name="url" value="https://www.flipkart.com/" /> 
+	<parameter name="mobileBrand" value="Mi"/>
+	<parameter name="filePath" value="C:\\TestData" />
+	<parameter name="fileName" value="OrderId.xlsx" />
+	<parameter name="sheetName" value="Sheet1" />
+	
+	<test name = "Store Health Check">
+
+			<classes>
+			<class name="com.flipkart.framework.selenium.BaseWebDriverTest"/>
+			
+			<class name="com.flipkart.testing.tests.FlipkartScenario1Test"/> 
+			</classes>			
+	</test>
+	
+	
+</suite>
